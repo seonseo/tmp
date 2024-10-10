@@ -4,7 +4,7 @@ HEADER = Fixed.hpp
 CC = c++
 CFLAGS = -Wall -Wextra -Werror -std=c++98
 
-SRC = main.cpp	Fixed.cpp
+SRC = main.cpp	Fixed.cpp	FixedOperators.cpp
 OBJ = $(patsubst %.cpp, %.o, $(SRC))
 
 all:

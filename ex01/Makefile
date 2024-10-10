@@ -1,11 +1,10 @@
-NAME = my_awesome_phonebook
-HEADER = my_awesome_phonebook.h	Contact.h	PhoneBook.h
+NAME = a.out
+HEADER = Fixed.hpp
 
 CC = c++
-# -g -fsanitize=thread
 CFLAGS = -Wall -Wextra -Werror -std=c++98
 
-SRC = my_awesome_phonebook.cpp	Contact.cpp	PhoneBook.cpp
+SRC = main.cpp	Fixed.cpp
 OBJ = $(patsubst %.cpp, %.o, $(SRC))
 
 all:
@@ -13,7 +12,7 @@ all:
 
 $(NAME): $(OBJ)
 	@$(CC) $(CFLAGS) $(OBJ) -o $@
-	@echo "\033[0;33mmy_awesome_phonebook\033[0m compiled."
+	@echo "\033[0;33ma.out\033[0m compiled."
 
 %.o: %.cpp $(HEADER)
 	@$(CC) $(CFLAGS) -c $< -o $@
