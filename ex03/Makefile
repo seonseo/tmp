@@ -8,7 +8,6 @@ SRC = main.cpp AMateria.cpp Character.cpp Cure.cpp Ice.cpp MateriaSource.cpp Flo
 OBJ = $(patsubst %.cpp, %.o, $(SRC))
 
 all: $(NAME)
-
 # @make $(NAME) -j4
 
 $(NAME): $(OBJ)

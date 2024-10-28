@@ -7,8 +7,8 @@ CFLAGS = -Wall -Wextra -Werror -std=c++98
 SRC = main.cpp	Animal.cpp	Dog.cpp	Cat.cpp	WrongAnimal.cpp	WrongCat.cpp
 OBJ = $(patsubst %.cpp, %.o, $(SRC))
 
-all:
-	@make $(NAME) -j4
+all: $(NAME)
+# @make $(NAME) -j4
 
 $(NAME): $(OBJ)
 	@$(CC) $(CFLAGS) $(OBJ) -o $@

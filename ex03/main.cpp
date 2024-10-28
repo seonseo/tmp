@@ -8,14 +8,14 @@ namespace Global
 	Floor	floor;
 }
 
-void	leakCheck()
-{
-	system("leaks a.out");
-}
+// void	leakCheck()
+// {
+// 	system("leaks a.out");
+// }
 
 int main()
 {
-	atexit(leakCheck);
+	// atexit(leakCheck);
 
 	IMateriaSource* src = new MateriaSource();
 	src->learnMateria(new Ice());
